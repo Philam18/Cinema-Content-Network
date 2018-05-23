@@ -47,6 +47,7 @@ As so, HisCinema must appropriately handle `200 OK` and `404 Not Found` HTTP res
 
 The client's Local DNS attempts to resolve requests for video URLs. Typically, after resolution, Local DNS's cache results to improve look-up speeds for subsequent queries - this function is not implemented.
 
+In general, the name-servers (including the local DNS) in this implementation listen on UDP for incoming DNS queries, while the two-webservers (`HisCinema` and `HerCDN`) implement TCP.  
 
 ## Requirements
 
